@@ -1,0 +1,70 @@
+h1{
+    color:red;
+    font-size:30px;
+    text-decoration:underline;
+}
+h2{
+    color:orange;
+    font-size:25px;
+    text-decoration:line-through;
+}
+h3{
+    color:purple;
+    font-size:20px;
+    text-decoration:overline;
+}
+#deneme{
+    color:green;
+    font-size:25px;
+}
+#deneme2{
+    color:rgb(193, 25, 168);
+    font-size:25px;
+}
+div.sablon{
+    text-align:center;
+}
+p.uppercase{
+    text-transform:uppercase;
+    font-size:60px;
+    font-style: italic;
+    color:blueviolet;
+    text-align:center;
+    font-weight:bold;
+}
+p.lowercase{
+    text-transform:lowercase;
+    font-size:50px;
+    font-style:oblique;
+    color:blueviolet;
+    text-align:right;
+    font-weight:bold;
+}
+p.capitalize{
+    text-transform:capitalize;
+    font-size:40px;
+    font-style:inherit;
+    color:blueviolet;
+    text-align:justify;
+    font-weight:bold;
+}
+a:link{
+    color:blue;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:visited{
+    color:green;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:hover{
+    color:red;
+    background-color:transparent;
+    text-decoration:underline;
+}
+a:active{
+    color:yellow;
+    background-color:transparent;
+    text-decoration:underline;
+}
