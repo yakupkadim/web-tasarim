@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="deneme1.js"></script>
+</head>
+<body>
+    <script>
+        var txt1,txt2,sayı1,sayı2;
+        var txtresult=txt1 +" " + txt2;
+        txt1="what a wonderful world <br>";
+        txt2="yes it is";
+        document.write(txt1+" "+txt2 + "<br>");
+        sayı1=5;
+        sayı2=10;
+        
+        document.write(txtresult);
+        document.write( sayı1 + sayı2);
+        document.write("<br>"+ (sayı1-sayı2));
+
+        x=5+5;
+        document.write("<br>",x);
+        x="5"+"5";
+        document.write("<br>",x);
+        x=5+"5";
+        document.write("<br>",x);
+        x="5"+5;
+        document.write("<br>",x);
+
+        var age=20;
+        if(age<18){
+            document.write("<br>reşit değilsin");   
+        }
+        else if(age<29){
+            document.write("<br>reşit oldun gg!");
+        }
+        var i=20;
+        var j=18;
+        if(i>30 && j>1 ){
+            document.write("<br>doğru haber");
+        }
+        else if (i>30 || j>1){
+            document.write("<br>biri doğru sadece");
+        }
+        else if(!(i>30)){
+            document.write("<br>i 30 dan küçük");
+        }
+        var time=new Date().getHours();
+        document.write("<br>şu an saat: ",time);
+        if(time<10){
+            document.write("<br>günaydın");
+        }
+        else if(time<20){
+            document.write("<br>iyi günler");
+        }
+        else{
+            document.write("<br>iyi geceler");
+        }
+        switch(time){
+            case 10:time="Saat 10"; break;
+            case 11:time="SAAATT 11";break;
+            default:time="saat fakrlı bir şey";break;
+        }
+        alert("ccccccccccc");
+        confirm("badını gir?");
+        prompt("adın ne ?","Yakup");
+        function Uyarı(){
+            alert("DÜÜTTTTTTTTTTTT!!!")
+        }
+    </script>
+    <form>
+            <input type="button" value="Uyarı" onclick="Uyarı()">
+    </form>
+    
+
+</body>
+</html>
