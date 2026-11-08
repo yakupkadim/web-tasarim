@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var x=prompt("0 ile 10 arası bir rakam giriniz:","");
+        try{
+            if(x>10){
+                throw"Err1";
+            }
+            else if(x<0){
+                throw"Err2";
+            }
+        }
+        catch(er) {
+            if(er=="Err1")
+                alert("10'dan yüksek bir sayı girdiniz!");
+            if(er=="Err2")
+                alert("0'dan küçük bir sayı girdiniz!");
+            }    
+            
+        
+    function checkEmail() {
+        var email =document.getElementById("email").value;
+        var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!regex.test(email)) {   
+            alert("geçerli email giriniz.");
+        }
+        if(regex.test(email)){
+            alert("doğru email");
+        }
+}
+</script>
+</head>
+<body>
+    <form>
+    <input type="text" size="30" id="email" onchange="checkEmail()">
+    <input type="password" size="30" id="password" onchange="checkEmail()">
+    </form>
+    
+</body>
+</html>

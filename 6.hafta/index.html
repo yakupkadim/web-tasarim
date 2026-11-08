@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function carpma(a,b){
+            return a*b;
+        }
+        var sonuc=carpma(5,6);
+        
+        document.write("sonuç: "+sonuc);
+        for (var i=0;i<=carpma(4,5);i+=2){
+            if(i==18){
+                document.write("<br>i:"+i+"break ile döngüden çıkıldı");
+                break;
+            }
+            document.write("<br>i:"+i);
+        }
+        document.write("<br>---------------------------------------------------");
+        var j=0;
+        while(j<=carpma(4,5)){
+            if(j==4){
+                continue;
+            }
+            document.write("<br>j:"+j);
+            j+=2;
+        }
+        document.write("<br>---------------------------------------------------");
+        k=0;
+        do{
+            document.write("<br>k:"+k);
+            k+=2;
+        }
+        while(k<=carpma(4,5))
+        
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
